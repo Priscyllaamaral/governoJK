@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cinquenta Anos em Cinco</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2b2418;--paper:#fbf6ea;--bg:#14202e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 30%,#22364d,var(--bg));display:flex;align-items:center;justify-content:center;font-family:Lora,Georgia,serif;color:var(--ink)}
+.stage{position:relative;width:min(94vw,540px);height:min(90vh,780px);perspective:2200px}
+.page{position:absolute;inset:0;display:flex;flex-direction:column;background:var(--paper);border:10px solid var(--c);border-radius:4px 14px 14px 4px;transform-origin:left center;box-shadow:0 20px 50px rgba(0,0,0,.45);transition:transform .9s cubic-bezier(.55,.1,.3,1),opacity .25s,box-shadow .9s,visibility 0s;overflow:hidden}
+.page.turned{transform:rotateY(-110deg);opacity:0;visibility:hidden;box-shadow:-30px 0 60px rgba(0,0,0,.5);transition:transform .9s cubic-bezier(.55,.1,.3,1),opacity .3s .6s,box-shadow .9s,visibility 0s .9s}
+.body{flex:1;overflow:hidden;padding:14px 22px 10px;line-height:1.55;display:flex;flex-direction:column;justify-content:center}
+.body p{margin:0 0 .8em}
+.ico{display:block;width:84px;height:42px;margin:0 auto 12px;color:var(--c);flex:none}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:1.25em;margin:0 0 .6em;color:var(--c);text-align:center}
+ul{margin:0 0 .8em;padding-left:1.1em}
+li{margin:.15em 0}
+.bar{display:inline-block;height:7px;background:var(--c);border-radius:4px;vertical-align:middle;margin-left:8px}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:8px;background:var(--c);color:#fff;font-size:12px;padding:7px 12px;flex:none}
+.foot button{all:unset;cursor:pointer;color:#fff;font:inherit;padding:6px 8px;border-radius:4px;text-decoration:underline;text-underline-offset:3px}
+.foot button:hover,.foot button:focus-visible{background:rgba(255,255,255,.22)}
+.foot span{opacity:.85}
+.cover{background:linear-gradient(#10243d,#1c3b5e);color:#f6e9c8;text-align:center}
+.cover .body{align-items:center;padding:24px}
+.cover h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(34px,9vw,52px);line-height:1.05;margin:.3em 0 .2em;color:#f3c85a}
+.cover p{font-style:italic;margin:0 0 .5em;font-size:16px}
+.cover svg{width:100%;height:auto;border-radius:6px;margin-bottom:10px}
+.cover .by{font-size:13px;opacity:.8}
+@media (prefers-reduced-motion:reduce){.page,.page.turned{transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><linearGradient id="ss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a3b6e"/><stop offset="1" stop-color="#f2a54a"/></linearGradient></defs>
+<symbol id="i-church" viewBox="0 0 100 50"><path d="M8 48Q28 6 48 48zM38 48Q58 14 78 48z"/><rect x="82" y="10" width="6" height="38"/></symbol>
+<symbol id="i-cong" viewBox="0 0 100 50"><rect x="44" y="3" width="5" height="40"/><rect x="55" y="3" width="5" height="40"/><path d="M68 43a14 14 0 0 1 28 0zM4 33h30a15 10 0 0 1-30 0z"/><rect y="44" width="100" height="5"/></symbol>
+<symbol id="i-cat" viewBox="0 0 100 50"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M22 48C36 30 36 18 34 4M42 48C50 30 50 18 50 4M62 48C54 30 54 18 52 4M80 48C66 30 66 18 68 4"/></g></symbol>
+<symbol id="i-work" viewBox="0 0 100 50"><g id="w"><circle cx="16" cy="9" r="6"/><path d="M8 19h16l-2 16h-4v13h-4V35h-4z"/></g><use href="#w" x="34"/><use href="#w" x="68"/></symbol>
+<symbol id="i-fac" viewBox="0 0 100 50"><rect x="10" y="20" width="72" height="26"/><rect x="16" y="4" width="8" height="16"/><rect x="34" y="9" width="8" height="11"/><rect x="0" y="46" width="100" height="4"/></symbol>
+<symbol id="i-bal" viewBox="0 0 100 50"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M50 5v40M30 45h40M18 13h64M10 32h20M70 32h20M20 13l-10 19M20 13l10 19M80 13l-10 19M80 13l10 19"/></g></symbol>
+<symbol id="i-bulb" viewBox="0 0 100 50"><circle cx="50" cy="20" r="16"/><rect x="42" y="38" width="16" height="9" rx="2"/></symbol>
+<symbol id="i-star" viewBox="0 0 100 50"><polygon points="50,2 58,19 78,21 63,34 68,48 50,40 32,48 37,34 22,21 42,19"/></symbol>
+</svg>
+<main class="stage" id="stage"></main>
+<script>
+var COLORS=['#b8452e','#2a7f62','#a87a0a','#5b4b8a','#1f78a8','#a63d6b','#4f7a2a','#b5651d'];
+var P=[
+['star','<p>Eu sempre admirei o governo de Juscelino Kubitschek. A meta dele era realizar em 5 anos o que, segundo sua visão, só seria possível para qualquer governo realizar em 50 anos. A ousadia, a força de trabalhar e a inteligência dele sempre me inspiraram.</p><p>Junto com Oscar Niemeyer, eles protagonizaram uma das histórias mais impressionantes da nossa história. De um lado, um presidente que enxergava um Brasil muito maior do que aquele que existia diante dos seus olhos. Do outro, um arquiteto que tinha a capacidade de transformar ideias extraordinárias em obras de arte. Dois homens com visões diferentes, mas que compartilhavam algo em comum: a capacidade de imaginar o impossível e a coragem de tentar realizá-lo.</p>'],
+['church','<p>Tudo começou muito antes de Brasília. Ainda como prefeito de Belo Horizonte, JK já havia convidado Niemeyer para desenvolver o Conjunto Arquitetônico da Pampulha. Ali nasceu uma parceria que mudaria a história da arquitetura brasileira e que, anos depois, ganharia uma dimensão ainda maior.</p><p>Quando Juscelino chegou à Presidência da República, em 1956, não queria simplesmente administrar o país. Queria transformá-lo. Seu projeto era acelerar o desenvolvimento nacional, investir em energia, transportes, indústria, alimentação e educação. Queria estradas, fábricas, modernização e oportunidades. Queria tirar o Brasil de um lugar de limitações e colocá-lo em uma posição de protagonismo.</p>'],
+['cong','<p>E então veio o que talvez tenha sido sua maior ousadia: construir uma nova capital no meio do Planalto Central.</p><p>Imaginem a dimensão dessa ideia! Construir uma cidade praticamente do zero, em uma região distante dos grandes centros, em um prazo extremamente curto. Enquanto muitos enxergavam dificuldades, JK enxergava uma oportunidade de escrever uma nova página na história do país.</p>'],
+['cat','<p>Ele confiou a Oscar Niemeyer a missão de projetar os principais edifícios da nova capital. E Niemeyer não entregou apenas prédios. Criou formas, curvas e estruturas que pareciam desafiar a própria imaginação humana. O Congresso Nacional, o Palácio da Alvorada, o Supremo Tribunal Federal, a Catedral de Brasília... Cada construção parecia carregar uma mensagem de que o futuro não precisava ser uma repetição do passado.</p>'],
+['work','<p>Mas Brasília não nasceu apenas das mãos de um presidente e de um arquiteto. Milhares de trabalhadores, os chamados candangos, deixaram suas terras, enfrentaram condições extremamente difíceis e participaram daquela construção monumental. Foram eles que colocaram a mão na massa e transformaram aquele projeto em realidade. Existe uma história de coragem, suor e sacrifício por trás de cada estrutura daquela cidade.</p>'],
+['cong','<p>E o mais impressionante é que, em 21 de abril de 1960, apenas quatro anos depois de JK assumir a Presidência, Brasília foi inaugurada. Uma cidade inteira havia surgido onde antes havia o cerrado. A capital do país havia sido transferida do Rio de Janeiro para o coração do Brasil.</p><p>É claro que o governo JK também teve seus problemas, como o aumento da inflação, do endividamento e as desigualdades que o crescimento econômico não conseguiu resolver. Mas isso não apaga a dimensão de sua capacidade de planejamento, execução e transformação.</p>'],
+['bulb','<p>O que mais me chama a atenção nessa história é a mentalidade por trás de tudo isso. A capacidade de olhar para um terreno vazio e enxergar uma cidade. Olhar para um país cheio de limitações e enxergar uma potência. Ter uma ideia gigantesca e, em vez de simplesmente considerá-la impossível, começar a trabalhar para realizá-la.</p><p>Talvez seja justamente isso que mais admiro em Juscelino Kubitschek: ele não queria apenas deixar um governo para a história. Queria deixar um país diferente daquele que encontrou.</p>'],
+['star','<p>E conseguiu deixar uma marca que atravessou gerações.</p><p>Brasília é mais do que uma capital. É a materialização de uma ideia, de uma ambição e de um momento em que o Brasil ousou pensar grande.</p><p>Cinquenta anos em cinco. Mais do que um slogan político, uma demonstração de que a visão de futuro, quando acompanhada de coragem, planejamento e trabalho, pode transformar a realidade de uma nação.</p>'],
+['work','<p>E há um dado impressionante: em 1959, antes mesmo da inauguração, o censo experimental do IBGE identificou aproximadamente 64 mil habitantes na região. A população era formada por pessoas vindas de praticamente todos os estados brasileiros. Os migrantes representavam cerca de 86,7% dos moradores.</p><p>A composição regional também era bastante interessante:</p><ul><li>Goiás: 23,3% <span class="bar" style="width:93px"></span></li><li>Minas Gerais: 20,3% <span class="bar" style="width:81px"></span></li><li>Bahia: 13,5% <span class="bar" style="width:54px"></span></li><li>Ceará: 7,4% <span class="bar" style="width:30px"></span></li><li>Pernambuco: 6,3% <span class="bar" style="width:25px"></span></li></ul><p>Os nordestinos, somados, representavam aproximadamente 44% dos trabalhadores pioneiros, segundo os dados históricos.</p>'],
+['work','<p>É curioso pensar que uma cidade tão moderna, planejada com tanta precisão e idealizada por grandes nomes da arquitetura, tenha sido construída por uma população tão diversa. Brasília não nasceu apenas do concreto, do aço e dos projetos arquitetônicos. Nasceu também do encontro de diferentes Brasis.</p><p>Talvez uma das maiores riquezas daquela construção tenha sido justamente essa: pessoas que nunca haviam se conhecido, vindas de realidades completamente diferentes, uniram suas forças para construir algo que pertenceria a todo o país.</p>'],
+['fac','<p>O governo de Juscelino Kubitschek (1956–1961) foi um dos períodos mais marcantes da história econômica e política do Brasil. Foi um governo de grandes realizações, visão desenvolvimentista e modernização, mas também de decisões que trouxeram consequências econômicas importantes.</p><p>Acho interessante analisar os dois lados, porque é possível admirar a capacidade de realização de JK sem ignorar os problemas de sua administração.</p>'],
+['fac','<h2>Pontos fortes do governo JK</h2><p><b>1. Construção de Brasília</b><br>Transferiu a capital para o interior do país e realizou uma das maiores obras de planejamento urbano do século XX. Brasília foi inaugurada em 21 de abril de 1960.</p><p><b>2. Industrialização</b><br>Incentivou a instalação de montadoras e o crescimento das indústrias automobilística, siderúrgica, química e de bens de consumo. O Brasil começou a produzir muito mais dentro do próprio território.</p><p><b>3. Expansão da infraestrutura</b><br>Investiu em rodovias, energia e transportes, facilitando a integração de diferentes regiões brasileiras.</p>'],
+['fac','<p><b>4. Crescimento econômico</b><br>O país apresentou forte expansão econômica. A indústria ganhou força e o Brasil passou por um acelerado processo de modernização.</p><p><b>5. Interiorização do desenvolvimento</b><br>Brasília ajudou a estimular a ocupação e a atividade econômica no Centro-Oeste, fortalecendo a integração territorial do país.</p>'],
+['bal','<h2>Pontos fracos do governo JK</h2><p><b>1. Aumento da inflação</b><br>Os gastos elevados e o financiamento de parte dos investimentos contribuíram para a inflação, que reduziu o poder de compra da população.</p><p><b>2. Endividamento público</b><br>O governo recorreu a empréstimos e capital estrangeiro para financiar seu projeto de desenvolvimento. Isso deixou uma herança de dificuldades financeiras.</p>'],
+['bal','<p><b>3. Dependência de capital estrangeiro</b><br>A entrada de multinacionais acelerou a industrialização, mas também aumentou a influência do capital estrangeiro sobre setores importantes da economia.</p><p><b>4. Desigualdade regional e social</b><br>O desenvolvimento não chegou de maneira equilibrada a todas as regiões. A industrialização se concentrou principalmente no Sudeste, enquanto problemas históricos do Nordeste e do campo permaneceram.</p>'],
+['bal','<p><b>5. Priorização das rodovias</b><br>O governo favoreceu o transporte rodoviário, acompanhando a expansão da indústria automobilística. Isso contribuiu para uma dependência maior das estradas, em detrimento de investimentos proporcionais em ferrovias e outros meios de transporte.</p><p><b>6. Problemas sociais na construção de Brasília</b><br>Apesar da grandiosidade do projeto, os trabalhadores enfrentaram condições difíceis. Muitos candangos não receberam, depois da construção, as mesmas oportunidades de moradia e integração na cidade planejada.</p>'],
+['bulb','<p>E talvez seja justamente essa a maior contribuição que um governo como o de Juscelino Kubitschek pode deixar para as próximas gerações: a oportunidade de aprender com a história.</p><p>Hoje, olhando para aquele período, podemos reconhecer a importância de um governante que teve coragem de pensar grande, estabelecer metas ambiciosas e mobilizar pessoas para transformar projetos em realidade. Podemos nos inspirar em sua capacidade de planejamento, na disposição para trabalhar, na visão de futuro e na compreensão de que um país não se desenvolve sem investimentos, infraestrutura, educação e indústria.</p>'],
+['bal','<p>Mas também podemos aprender com seus erros. Crescimento econômico, por si só, não significa desenvolvimento completo. Não basta construir grandes cidades, inaugurar rodovias, instalar fábricas e apresentar números expressivos. É preciso cuidar das contas públicas, combater a inflação, reduzir as desigualdades e garantir que as oportunidades cheguem à população de maneira mais justa.</p><p>Imagine o que poderíamos realizar se reuníssemos o melhor dessas duas lições: a ousadia de JK para construir e transformar, acompanhada de uma responsabilidade ainda maior com o equilíbrio econômico e o desenvolvimento social.</p>'],
+['star','<p><b>Não precisamos escolher entre crescer e cuidar das pessoas. Precisamos aprender a fazer as duas coisas.</b></p><p>A história não deve servir apenas para admirarmos grandes personagens ou criticarmos suas decisões. Ela deve nos ajudar a construir um futuro melhor. E talvez seja isso que mais me encanta quando olho para aquele período: perceber que o Brasil já demonstrou ser capaz de realizar projetos gigantescos quando existe visão, planejamento, trabalho e vontade de fazer acontecer.</p><p>Não precisamos repetir o passado. Precisamos aproveitar seus acertos, compreender seus erros e ter coragem de fazer ainda melhor.</p>']
+];
+var st=document.getElementById('stage'),N=P.length,h='';
+h+='<section class="page cover" style="--c:#8a6a12"><div class="body"><svg viewBox="0 0 400 200" role="img" aria-label="Ilustração do Congresso Nacional ao pôr do sol"><rect width="400" height="200" fill="url(#ss)"/><circle cx="200" cy="140" r="44" fill="#ffd77a" opacity=".9"/><rect y="165" width="400" height="35" fill="#4a3a2a"/><use href="#i-cong" x="70" y="40" width="260" height="130" fill="#f4efe6"/></svg><h1>Cinquenta Anos em Cinco</h1><p>Juscelino, Niemeyer e a ousadia de construir o futuro</p><span class="by">Uma história sobre Brasília</span></div><div class="foot"><span>Capa</span><button data-next>toque aqui para abrir o livro ›</button></div></section>';
+P.forEach(function(p,k){
+ var last=k===N-1;
+ h+='<section class="page" style="--c:'+COLORS[k%COLORS.length]+'"><div class="body"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#i-'+p[0]+'"/></svg><div class="txt">'+p[1]+'</div></div><div class="foot"><button data-prev>‹ voltar</button><span>'+(k+1)+' de '+N+'</span>'+(last?'<button data-first>voltar ao início ↺</button>':'<button data-next>toque para virar a página ›</button>')+'</div></section>';
+});
+st.innerHTML=h;
+var pages=[].slice.call(st.children),i=0;
+pages.forEach(function(p,k){p.style.zIndex=pages.length-k});
+function fit(){
+ pages.forEach(function(p){
+  var b=p.querySelector('.body'),t=p.querySelector('.txt');if(!t)return;
+  var s=17;b.style.fontSize=s+'px';
+  while(b.scrollHeight>b.clientHeight+1&&s>10){s-=.5;b.style.fontSize=s+'px'}
+ });
+}
+fit();window.addEventListener('resize',fit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+function go(n){
+ n=Math.max(0,Math.min(pages.length-1,n));
+ pages.forEach(function(p,k){p.classList.toggle('turned',k<n)});
+ i=n;
+}
+document.addEventListener('click',function(e){
+ var b=e.target.closest('button');if(!b)return;
+ if(b.hasAttribute('data-next'))go(i+1);
+ else if(b.hasAttribute('data-prev'))go(i-1);
+ else if(b.hasAttribute('data-first'))go(0);
+});
+document.addEventListener('keydown',function(e){
+ if(e.key==='ArrowRight')go(i+1);
+ if(e.key==='ArrowLeft')go(i-1);
+});
+var sx=null;
+document.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',function(e){
+ if(sx===null)return;var d=e.changedTouches[0].clientX-sx;sx=null;
+ if(Math.abs(d)>70)go(d<0?i+1:i-1);
+});
+</script>
+</body>
+</html>
